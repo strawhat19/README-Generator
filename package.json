@@ -1,0 +1,29 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A Professional ReadMe Generator for Busy Developers",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strawhat19/README-Generator.git"
+  },
+  "keywords": [
+    "README",
+    "generator",
+    "professional",
+    "code"
+  ],
+  "author": "Rakib Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strawhat19/README-Generator/issues"
+  },
+  "homepage": "https://github.com/strawhat19/README-Generator#readme"
+}
