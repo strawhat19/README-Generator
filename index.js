@@ -5,45 +5,120 @@ console.log(`Professional README Generator for Busy Developers!`);
 // Declaring Constants
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
+const generateMarkdown = require(`./utils/generateMarkdown`);
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
+        name: `github`,
+        type: `input`,
+        message: `What is your Github Username?`,
+        validate(username) {
+            if (username == ``) {
+              return `You must enter your Github Username`;
+            }
+            return true;
+        }
+    },{
+        name: `email`,
+        type: `input`,
+        message: `Please enter your Email Address.`,
+        filter(email) {
+            return email.toLowerCase();
+        },
+        validate(email) {
+            if (email == ``) {
+              return `You must enter a valid Email Address`;
+            }
+            return true;
+        }
+    },{
+        name: `title`,
         type: `input`,
         message: `What is the Title of the Application?`,
-        name: `title`
+        default: `Generic App`
     },{
+        name: `description`,
         type: `input`,
         message: `Please write a short Description of the Applications Function.`,
-        name: `description`
+        default: `A Generic App`
     },{
+        name: `ifPreview`,
+        type: `confirm`,
+        message: `Do you have a valid link to either an Image, GIF, or Video of the Application?`,
+        default: false
+    },{
+        name: `preview`,
         type: `input`,
-        message: `What are the Installation Instructions?`,
-        name: `installation`
+        message: `Please enter a link to an Image // GIF // Video of the Application`,
+        when(response) {
+            return response.ifPreview !== false;
+        }
     },{
+        name: `installation`,
+        type: `input`,
+        message: `What are the Application Installation Instructions?`,
+        default: `NPM Install`
+    },{
+        name: `usage`,
         type: `input`,
         message: `What are the Directions for Usage?`,
-        name: `usage`
+        default: `Node.js`
     },{
-        type: `input`,
-        message: `What license(s) does this Application utilize?`,
-        name: `licenses`
+        name: `ifLicense`,
+        type: `confirm`,
+        message: `Does this Application use a License?`,
+        default: false
     },{
-        type: `input`,
-        message: `Who contributed to this Application?`,
-        name: `contributors`
+        name: `licenses`,
+        type: `list`,
+        message: `What license does this Application utilize?`,
+        choices: [
+            `MIT // Massachusetts Institute of Technology License`,
+            `BSD // Berkeley Software Distribution License`,
+            `ISC // Internet Software Consortium License`,
+            `GNU // GPL General Public License`,
+            `APACHE // Apache License`
+          ],
+        default: 0,
+        when(response) {
+            return response.ifLicense !== false;
+        }
     },{
+        name: `tests`,
         type: `input`,
         message: `What tests were made to ensure quality on this project?`,
-        name: `description`
+        
+    },{
+        name: `contributors`,
+        type: `input`,
+        message: `Who contributed to this Application?`,
     }
 ]
 
-// Function call to initialize app
-init();
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+writeToFile = (fileName, data) => {
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+init = () => {
+
+    // Use Inquirer
+    inquirer
+    .prompt(questions)
+    .then(response => {
+        console.log(response);
+    })
+    .catch(error => {
+        if (error.isTtyError) {
+        console.log(`Prompt couldn't be rendered in the current environment.`);
+        } else {
+        console.log(error);
+        }
+    });
+
+}
+
+// Function call to initialize app
+init();
