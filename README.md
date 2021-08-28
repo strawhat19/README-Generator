@@ -5,7 +5,15 @@
 
   Generates README's
 
-  [![Preview Application](./screenshot.JPG)](./screenshot.JPG)
+  [![Reveal](./showcase/reveal.gif)](./showcase/reveal.gif)
+  [![Git Bash Here](./showcase/gitbashhere.gif)](./showcase/gitbashhere.gif)
+  [![Using the App](./showcase/usingtheApp.gif)](./showcase/usingtheApp.gif)
+  [![Final Use](./showcase/finalUse.gif)](./showcase/finalUse.gif)
+  [![Generated](./showcase/generated.gif)](./showcase/generated.gif)
+  [![Preview](./showcase/preview.gif)](./showcase/preview.gif)
+  [![Final Preview](./showcase/finalPreview.gif)](./showcase/finalPreview.gif)
+
+  [![ScreenShot](./showcase/screenshot.JPG)](./showcase/screenshot.JPG)
 
   ## Table of Contents  
   * [Installation](#installation)  
