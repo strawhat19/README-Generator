@@ -88,7 +88,7 @@ const questions = [
         name: `tests`,
         type: `input`,
         message: `What Tests were made to Ensure Quality on this Application?`,
-        default: `Jest`
+        default: `Jest, NPM Tests`
         
     },{
         name: `contributors`,
@@ -99,7 +99,7 @@ const questions = [
         name: `contributions`,
         type: `input`,
         message: `How can other Developers Contribute to this Application?`,
-        default: `Fork it!`
+        default: `Fork it, Clone it, Branch it!`
     }
 ]
 
