@@ -3,8 +3,8 @@
 function renderLicenseBadge(license) {
     let licenseArray = license.split(` `);
     let licenseName = licenseArray[0];
-    return `![License](https://img.shields.io/badge/License-${licenseName}-blue.svg)`;
-    // return `[![License Badge: ${licenseName}](https://img.shields.io/badge/License-${licenseName}-blue.svg)](${renderLicenseLink(response.license)})`;
+    // return `![License](https://img.shields.io/badge/License-${licenseName}-blue.svg)`;
+    return `[![License Badge: ${licenseName}](https://img.shields.io/badge/License-${licenseName}-blue.svg)](${renderLicenseLink(licenseName)})`;
 }
 
 // TODO: Create a function that returns the license link
@@ -220,19 +220,19 @@ function generateMarkdown(response) {
   * [Questions](#questions)
 
   ## Installation
-  #### ${response.installation}
+  #### Run the command ${response.installation} to Install!
   
   ## Usage
-  #### ${response.usage}
+  #### Use ${response.usage} CLI to run this Application.
   
   ## Tests
-  #### ${response.tests} testing was used to ensure quality on this Application.
+  #### ${response.tests} were used to ensure quality on this Application.
 
   ## Contributors
-  #### ${response.contributors}
+  #### The Contributors of this Application: ${response.contributors}.
 
   ## Contributions
-  #### ${response.contributions}
+  #### To contribute to this application, you can: ${response.contributions}
 
   ## Licensing
   ${renderLicenseBadge(response.license)}
@@ -240,7 +240,7 @@ function generateMarkdown(response) {
   #### ${renderLicenseSection(response.license)}
   
   ## Questions
-  #### [*${response.github}*: GitHub Profile](https://github.com/${response.github})
+  #### GitHub Profile: [*${response.github}*](https://github.com/${response.github})
   #### Contact me or ask me questions at [${response.email}](mailto:${response.email}).
   `;
 }

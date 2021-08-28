@@ -1,11 +1,11 @@
 
-  # Generic App
+  # readmeGenerator
 
-  ![License](https://img.shields.io/badge/License-APACHE-blue.svg)
+  [![License Badge: GNU](https://img.shields.io/badge/License-GNU-blue.svg)](https://opensource.org/licenses/gpl-3.0)
 
-  A Generic App
+  generates readmes
 
-  [Preview Application](link)
+  [Preview Application](https://camo.githubusercontent.com/88ee62b4935b91debb711fde24395ea45086927a20a65c2aa242bc2f9daa6c6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4150414348452d626c75652e737667)
 
   ## Table of Contents  
   * [Installation](#installation)  
@@ -17,39 +17,87 @@
   * [Questions](#questions)
 
   ## Installation
-  #### NPM Install
+  #### Run the command NPM Install to Install!
   
   ## Usage
-  #### Node.js
+  #### Use Node.js CLI to run this Application.
   
   ## Tests
-  #### Jest, NPM Tests testing was used to ensure quality on this Application.
+  #### Jest, NPM Tests were used to ensure quality on this Application.
 
   ## Contributors
-  #### Just Me!
+  #### The Contributors of this Application: Just Me!.
 
   ## Contributions
-  #### Fork it, Clone it, Branch it!
+  #### To contribute to this application, you can: Fork it, Clone it, Branch it!
 
   ## Licensing
-  ![License](https://img.shields.io/badge/License-APACHE-blue.svg)
-  #### https://opensource.org/licenses/APACHE-2.0
+  [![License Badge: GNU](https://img.shields.io/badge/License-GNU-blue.svg)](https://opensource.org/licenses/gpl-3.0)
+  #### https://opensource.org/licenses/gpl-3.0
   #### 
-        Apache License
+        GNU License
+        
+        Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 
-        Licensed under the Apache License, Version 2.0 (the "License");
-        you may not use this file except in compliance with the License.
-        You may obtain a copy of the License at
+        The GNU General Public License is a free, copyleft license for
+        software and other kinds of works.
 
-        http://www.apache.org/licenses/LICENSE-2.0
+        The licenses for most software and other practical works are designed
+        to take away your freedom to share and change the works.  By contrast,
+        the GNU General Public License is intended to guarantee your freedom to
+        share and change all versions of a program--to make sure it remains free
+        software for all its users.  We, the Free Software Foundation, use the
+        GNU General Public License for most of our software; it applies also to
+        any other work released this way by its authors.  You can apply it to
+        your programs, too.
 
-        Unless required by applicable law or agreed to in writing, software
-        distributed under the License is distributed on an "AS IS" BASIS,
-        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-        See the License for the specific language governing permissions and
-        limitations under the License.
+        When we speak of free software, we are referring to freedom, not
+        price.  Our General Public Licenses are designed to make sure that you
+        have the freedom to distribute copies of free software (and charge for
+        them if you wish), that you receive source code or can get it if you
+        want it, that you can change the software or use pieces of it in new
+        free programs, and that you know you can do these things.
+
+        To protect your rights, we need to prevent others from denying you
+        these rights or asking you to surrender the rights.  Therefore, you have
+        certain responsibilities if you distribute copies of the software, or if
+        you modify it: responsibilities to respect the freedom of others.
+
+        For example, if you distribute copies of such a program, whether
+        gratis or for a fee, you must pass on to the recipients the same
+        freedoms that you received.  You must make sure that they, too, receive
+        or can get the source code.  And you must show them these terms so they
+        know their rights.
+
+        Developers that use the GNU GPL protect your rights with two steps:
+        (1) assert copyright on the software, and (2) offer you this License
+        giving you legal permission to copy, distribute and/or modify it.
+
+        For the developers' and authors' protection, the GPL clearly explains
+        that there is no warranty for this free software.  For both users' and
+        authors' sake, the GPL requires that modified versions be marked as
+        changed, so that their problems will not be attributed erroneously to
+        authors of previous versions.
+
+        Some devices are designed to deny users access to install or run
+        modified versions of the software inside them, although the manufacturer
+        can do so.  This is fundamentally incompatible with the aim of
+        protecting users' freedom to change the software.  The systematic
+        pattern of such abuse occurs in the area of products for individuals to
+        use, which is precisely where it is most unacceptable.  Therefore, we
+        have designed this version of the GPL to prohibit the practice for those
+        products.  If such problems arise substantially in other domains, we
+        stand ready to extend this provision to those domains in future versions
+        of the GPL, as needed to protect the freedom of users.
+
+        Finally, every program is threatened constantly by software patents.
+        States should not allow patents to restrict development and use of
+        software on general-purpose computers, but in those that do, we wish to
+        avoid the special danger that patents applied to a free program could
+        make it effectively proprietary.  To prevent this, the GPL assures that
+        patents cannot be used to render the program non-free.
   
   ## Questions
-  #### [*strawhat19*: GitHub Profile](https://github.com/strawhat19)
+  #### GitHub Profile: [*strawhat19*](https://github.com/strawhat19)
   #### Contact me or ask me questions at [rakib987@gmail.com](mailto:rakib987@gmail.com).
   
