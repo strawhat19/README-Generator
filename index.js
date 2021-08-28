@@ -70,7 +70,7 @@ const questions = [
         message: `Does this Application use a License?`,
         default: false
     },{
-        name: `licenses`,
+        name: `license`,
         type: `list`,
         message: `What license does this Application utilize?`,
         choices: [
@@ -87,18 +87,28 @@ const questions = [
     },{
         name: `tests`,
         type: `input`,
-        message: `What tests were made to ensure quality on this project?`,
+        message: `What Tests were made to Ensure Quality on this Application?`,
+        default: `Jest`
         
     },{
         name: `contributors`,
         type: `input`,
         message: `Who contributed to this Application?`,
+        default: `Just Me!`
+    },{
+        name: `contributions`,
+        type: `input`,
+        message: `How can other Developers Contribute to this Application?`,
+        default: `Fork it!`
     }
 ]
 
 // TODO: Create a function to write README file
-writeToFile = (fileName, data) => {
-
+function writeToFile(response) {
+    fs.writeFile(`README-Test.md`, generateMarkdown(response), (error => {
+            error ? console.log(error) : console.log(`README Successfully Generated! You can find it within this folder!`);
+        })
+    )
 }
 
 // TODO: Create a function to initialize app
@@ -109,6 +119,10 @@ init = () => {
     .prompt(questions)
     .then(response => {
         console.log(response);
+        generateMarkdown(response);
+        writeToFile(response);
+        console.log(`README Successfully Generated! You can find it within this folder!`);
+        return response;
     })
     .catch(error => {
         if (error.isTtyError) {
