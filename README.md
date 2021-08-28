@@ -5,6 +5,9 @@
 
   Generates README's
 
+   ## Video 
+  [Link To Video](https://youtu.be/VgyQx0brp68) 
+
   ## Step 1: Navigate to the Terminal
   [![Reveal](./showcase/reveal.gif)](./showcase/reveal.gif)
   ## Step 2: Open your Preferred Terminal
@@ -18,7 +21,7 @@
   ## Step 6: You can Preview it in VS Code
   [![Preview](./showcase/preview.gif)](./showcase/preview.gif)
   ## Step 7: Or push it to Github and View it there
-  [![Final Preview](./showcase/finalPreview.gif)](./showcase/finalPreview.gif)
+  [![Final Preview](./showcase/finalPreview2.gif)](./showcase/finalPreview2.gif)
 
   ## Final: Finished Screen
   [![ScreenShot](./showcase/screenshot.JPG)](./showcase/screenshot.JPG)
