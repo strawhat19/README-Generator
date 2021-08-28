@@ -3,7 +3,6 @@
 function renderLicenseBadge(license) {
     let licenseArray = license.split(` `);
     let licenseName = licenseArray[0];
-    // return `![License](https://img.shields.io/badge/License-${licenseName}-blue.svg)`;
     return `[![License Badge: ${licenseName}](https://img.shields.io/badge/License-${licenseName}-blue.svg)](${renderLicenseLink(licenseName)})`;
 }
 
@@ -20,8 +19,8 @@ function renderLicenseLink(license) {
         return licenseLink = `https://opensource.org/licenses/${licenseName}-3-Clause`;
         case `ISC`:
         return licenseLink = `https://opensource.org/licenses/${licenseName}`;
-        case `GNU`:
-        return licenseLink = `https://opensource.org/licenses/gpl-3.0`;
+        case `GPL`:
+        return licenseLink = `https://opensource.org/licenses/${licenseName}-3.0`;
         case `APACHE`:
         return licenseLink = `https://opensource.org/licenses/${licenseName}-2.0`;
     }
@@ -117,13 +116,13 @@ function renderLicenseSection(license) {
         WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
         ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
         IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`;
-        case `GNU`:
+        case `GPL`:
         return licenseText = `
-        GNU License
+        GPL // GNU License
         
         Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 
-        The GNU General Public License is a free, copyleft license for
+        The GPL // GNU General Public License is a free, copyleft license for
         software and other kinds of works.
 
         The licenses for most software and other practical works are designed
@@ -223,21 +222,21 @@ function generateMarkdown(response) {
   #### Run the command ${response.installation} to Install!
   
   ## Usage
-  #### Use ${response.usage} CLI to run this Application.
+  #### Use ${response.usage} CLI (Command Line Interface) to run this Application.
   
   ## Tests
   #### ${response.tests} were used to ensure quality on this Application.
 
   ## Contributors
-  #### The Contributors of this Application: ${response.contributors}.
+  #### The Contributors of this Application: ${response.contributors}
 
   ## Contributions
   #### To contribute to this application, you can: ${response.contributions}
 
   ## Licensing
   ${renderLicenseBadge(response.license)}
-  #### ${renderLicenseLink(response.license)}
   #### ${renderLicenseSection(response.license)}
+  #### ${renderLicenseLink(response.license)}
   
   ## Questions
   #### GitHub Profile: [*${response.github}*](https://github.com/${response.github})

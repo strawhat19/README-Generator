@@ -65,11 +65,6 @@ const questions = [
         message: `What are the Directions for Usage?`,
         default: `Node.js`
     },{
-        name: `ifLicense`,
-        type: `confirm`,
-        message: `Does this Application use a License?`,
-        default: false
-    },{
         name: `license`,
         type: `list`,
         message: `What license does this Application utilize?`,
@@ -77,18 +72,15 @@ const questions = [
             `MIT // Massachusetts Institute of Technology License`,
             `BSD // Berkeley Software Distribution License`,
             `ISC // Internet Software Consortium License`,
-            `GNU // GPL General Public License`,
+            `GPL // GNU General Public License`,
             `APACHE // Apache License`
           ],
         default: 0,
-        when(response) {
-            return response.ifLicense !== false;
-        }
     },{
         name: `tests`,
         type: `input`,
         message: `What Tests were made to Ensure Quality on this Application?`,
-        default: `Jest, NPM Tests`
+        default: `Jest & NPM Tests`
         
     },{
         name: `contributors`,
@@ -105,7 +97,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(response) {
-    fs.writeFile(`README-Test.md`, generateMarkdown(response), (error => {
+    fs.writeFile(`Generated.md`, generateMarkdown(response), (error => {
             error ? console.log(error) : console.log(`README Successfully Generated! You can find it within this folder!`);
         })
     )
