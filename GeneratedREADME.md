@@ -1,9 +1,11 @@
 
-  # Readme Generator
+  # Async Stock Fetch
 
   [![License Badge: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  Generates README's
+  Practicing Asyncronous Fetching with Stocks API
+
+  [Preview Application](undefined)
 
   ## Table of Contents  
   * [Installation](#installation)  
@@ -15,16 +17,16 @@
   * [Questions](#questions)
 
   ## Installation
-  #### Run the command NPM Install to Install!
+  #### Run the command Open with Live Server to Install!
   
   ## Usage
-  #### Use Node.js CLI (Command Line Interface) to run this Application.
+  #### Use or Open in Default Browser CLI (Command Line Interface) to run this Application.
   
   ## Tests
   #### Jest & NPM Tests were used to ensure quality on this Application.
 
   ## Contributors
-  #### The Contributors of this Application: Just Me!
+  #### The Contributors of this Application: Rakib Ahmed, Jordan Avitan
 
   ## Contributions
   #### To contribute to this application, you can: Fork it, Clone it, Branch it!
